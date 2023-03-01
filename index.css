@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Tilt Warp', cursive;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container-presentation {
+
+    width: 100%;
+    min-height: 720px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(2, 3, 7, 0.582);
+
+}
+
+.fondo {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+
+}
+
+.perfil {
+    object-fit: cover;
+    height: 270px;
+    width: 270px;
+    border-radius: 50%;
+    -webkit-box-shadow: -1px 0px 47px 16px rgb(61, 61, 61);
+    -moz-box-shadow: -1px 0px 47px 16px rgb(44, 44, 44);
+    box-shadow: -1px 0px 47px 16px rgb(56, 56, 56);
+}
+
+
+.nombre {
+    margin-top: 20px;
+    font-size: 2.5rem;
+    color: #de3c2f;
+    margin-bottom: 50px;
+}
+
+.navbar {
+    display: flex;
+    column-gap: 5rem;
+    margin-bottom: 200px;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(214, 212, 212);
+}
+
+.navbar a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #de3c2f;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.3s all linear;
+}
+
+.navbar a:hover::after,
+.navbar .home-active::after {
+    width: 100%;
+
+}
+
+.navbar a:hover {
+    color: #de3c2f;
+}
+
+.container-about-me {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: rgb(20,19,38);
+    background: -moz-linear-gradient(90deg, rgba(20,19,38,1) 0%, rgba(14,10,27,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(20,19,38,1) 0%, rgba(14,10,27,1) 100%);
+    background: linear-gradient(90deg, rgba(20,19,38,1) 0%, rgba(14,10,27,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#141326",endColorstr="#0e0a1b",GradientType=1); 
+}
+
+
+.container-about-me-description{
+    margin-left: 40px;
+    width: 700px;
+
+}
+.about-me-perfil{
+    width: 400px;
+}
+
+.container-about-me-description h2{
+    font-size: 2.5rem;
+    color: rgb(218, 218, 218);
+    margin-bottom: 20px;
+}
+.container-about-me-description p {
+    height:  60px;
+    font-size: 1.2rem;
+    margin-bottom: 350px;
+    color: rgb(218, 218, 218);
+}
+
+.container-redes {
+    width: 100%;
+    height: 130px;
+    background-color: rgb(28, 27, 29);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s all linear;
+   
+}
+
+.container-redes img{
+    width: 50px;
+    height: 50px;
+    transition: 0.3s all;
+}
+.container-redes a{
+    margin-right: 10px;
+ 
+}
+.container-redes img:hover{
+    width: 60px;
+    height: 60px;
+    
+}
+.container-copy {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(28, 27, 29);
+    color: antiquewhite;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s all linear;
+}
+
+
+button{
+    padding: 0.5rem 1.5rem;
+    background: rgb(44, 44, 44);
+    color: white;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    
+}
+
+
