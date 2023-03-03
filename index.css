@@ -8,6 +8,10 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+
+/* SECCION PRINCIPAL*/
+
+
 .container-presentation {
 
     width: 100%;
@@ -22,7 +26,7 @@
 }
 
 .fondo {
-
+    max-width: 100%;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -33,6 +37,7 @@
 }
 
 .perfil {
+    max-width: 100%;
     object-fit: cover;
     height: 270px;
     width: 270px;
@@ -70,7 +75,7 @@
     content: '';
     width: 0;
     height: 2px;
-    background: #de3c2f;
+    background: #b4463e;
     position: absolute;
     bottom: -4px;
     left: 0;
@@ -84,45 +89,81 @@
 }
 
 .navbar a:hover {
-    color: #de3c2f;
+    color: #b4463e;
 }
+
+/* INFORMACION SOBRE NOSOTROS */
+
 
 .container-about-me {
     width: 100%;
-    height: 700px;
     position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background: rgb(20,19,38);
-    background: -moz-linear-gradient(90deg, rgba(20,19,38,1) 0%, rgba(14,10,27,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(20,19,38,1) 0%, rgba(14,10,27,1) 100%);
-    background: linear-gradient(90deg, rgba(20,19,38,1) 0%, rgba(14,10,27,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#141326",endColorstr="#0e0a1b",GradientType=1); 
+    background: rgb(20, 19, 38);
+    background: -moz-linear-gradient(90deg, rgba(20, 19, 38, 1) 0%, rgba(14, 10, 27, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(20, 19, 38, 1) 0%, rgba(14, 10, 27, 1) 100%);
+    background: linear-gradient(90deg, rgba(20, 19, 38, 1) 0%, rgba(14, 10, 27, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#141326", endColorstr="#0e0a1b", GradientType=1);
 }
 
 
-.container-about-me-description{
+.container-about-me-description {
     margin-left: 40px;
-    width: 700px;
+    width: 50%;
 
 }
-.about-me-perfil{
+
+.about-me-perfil {
+    max-width: 100%;
     width: 400px;
+    border: 6px solid rgb(20, 19, 38);
+    ;
+    border-radius: 4px;
+    box-shadow: 0px 0px 25px 1px #0e0b18;
+    margin: 1.5rem;
 }
 
-.container-about-me-description h2{
+.container-about-me-description h2 {
     font-size: 2.5rem;
     color: rgb(218, 218, 218);
     margin-bottom: 20px;
 }
+
 .container-about-me-description p {
-    height:  60px;
+    width: 100%;
+
     font-size: 1.2rem;
-    margin-bottom: 350px;
+    margin-bottom: 25px;
     color: rgb(218, 218, 218);
+    letter-spacing: 1px;
 }
+
+.datos {
+    border: 1px solid #b4463e;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 25px 1px #110d1d;
+}
+
+.datos-ul {
+    color: rgb(218, 218, 218);
+    font-size: 1.1rem;
+    padding-top: 20px;
+    letter-spacing: 1px;
+}
+
+.datos-ul li{
+  
+   
+    padding:8px 0px 8px 30px;
+}
+
+/* MIS REDES */
 
 .container-redes {
     width: 100%;
@@ -134,23 +175,27 @@
     align-items: center;
     justify-content: center;
     transition: 0.3s all linear;
-   
+
 }
 
-.container-redes img{
+.container-redes img {
     width: 50px;
     height: 50px;
     transition: 0.3s all;
+
 }
-.container-redes a{
+
+.container-redes a {
     margin-right: 10px;
- 
+
 }
-.container-redes img:hover{
+
+.container-redes img:hover {
     width: 60px;
     height: 60px;
-    
+
 }
+
 .container-copy {
     width: 100%;
     height: 100px;
@@ -164,15 +209,96 @@
     transition: 0.3s all linear;
 }
 
+.container_button {
+    width: 100%;
+    margin-top: 10px;
+}
 
-button{
+button {
     padding: 0.5rem 1.5rem;
     background: rgb(44, 44, 44);
     color: white;
     font-size: 1rem;
     border-radius: 0.5rem;
     border: none;
-    
+
 }
 
+/**********************/
+/* DISEÑO RESPONSIVO  */
+/**********************/
+@media screen and (max-width:768px) {
 
+    .container-presentation {
+        min-height: 600px;
+    }
+
+    .navbar {
+        display: flex;
+        column-gap: 4rem;
+        margin-bottom: 150px;
+    }
+
+    .navbar a {
+        font-size: 1.0rem;
+
+    }
+
+    .perfil {
+        height: 200px;
+        width: 200px;
+    }
+
+    .container-about-me-description {
+
+        width: 70%;
+
+    }
+
+    .container-about-me {
+        flex-direction: column;
+    }
+
+    .about-me-perfil {
+        width: 300px;
+        margin: 1.5rem;
+    }
+
+    .container-about-me-description h2 {
+        font-size: 1.9rem;
+        margin-left: 40px
+    }
+
+    .container-about-me-description p {
+        height: 90px;
+        font-size: 1.1rem;
+        margin-bottom: 120px;
+        color: rgb(218, 218, 218);
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+
+    .datos {
+        border: 1px solid #b4463e;
+        width: 100%;
+        height: 300px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        box-shadow: 0px 0px 25px 1px #110d1d;
+    }
+    
+    .datos-ul {
+        color: rgb(218, 218, 218);
+        font-size: 1rem;
+        padding-top: 20px;
+        letter-spacing: 1px;
+    }
+    
+    .datos-ul li{
+      
+       
+        padding:8px 0px 8px 30px;
+    }
+}
