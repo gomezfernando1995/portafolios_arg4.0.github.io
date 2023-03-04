@@ -15,7 +15,7 @@
 .container-presentation {
 
     width: 100%;
-    min-height: 720px;
+    min-height: 680px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -39,8 +39,8 @@
 .perfil {
     max-width: 100%;
     object-fit: cover;
-    height: 270px;
-    width: 270px;
+    height: 240px;
+    width: 240px;
     border-radius: 50%;
     -webkit-box-shadow: -1px 0px 47px 16px rgb(61, 61, 61);
     -moz-box-shadow: -1px 0px 47px 16px rgb(44, 44, 44);
@@ -120,7 +120,7 @@
     max-width: 100%;
     width: 400px;
     border: 6px solid rgb(20, 19, 38);
-    ;
+
     border-radius: 4px;
     box-shadow: 0px 0px 25px 1px #0e0b18;
     margin: 1.5rem;
@@ -143,8 +143,8 @@
 
 .datos {
     border: 1px solid #b4463e;
-    width: 100%;
-    height: 300px;
+    width: 800px;
+    height: 250px;
     border-radius: 5px;
     margin-bottom: 20px;
     box-shadow: 0px 0px 25px 1px #110d1d;
@@ -152,15 +152,19 @@
 
 .datos-ul {
     color: rgb(218, 218, 218);
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     padding-top: 20px;
     letter-spacing: 1px;
+    columns: 2;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+
 }
 
-.datos-ul li{
-  
-   
-    padding:8px 0px 8px 30px;
+.datos-ul li {
+    margin: 5px;
+    padding: 8px 0px 8px 30px;
 }
 
 /* MIS REDES */
@@ -224,6 +228,10 @@ button {
 
 }
 
+.dat {
+    font-weight: 800;
+}
+
 /**********************/
 /* DISEÑO RESPONSIVO  */
 /**********************/
@@ -250,9 +258,7 @@ button {
     }
 
     .container-about-me-description {
-
         width: 70%;
-
     }
 
     .container-about-me {
@@ -261,7 +267,7 @@ button {
 
     .about-me-perfil {
         width: 300px;
-        margin: 1.5rem;
+
     }
 
     .container-about-me-description h2 {
@@ -272,7 +278,7 @@ button {
     .container-about-me-description p {
         height: 90px;
         font-size: 1.1rem;
-        margin-bottom: 120px;
+        margin-bottom: 90px;
         color: rgb(218, 218, 218);
     }
 
@@ -283,22 +289,21 @@ button {
     .datos {
         border: 1px solid #b4463e;
         width: 100%;
-        height: 300px;
+        height: 330px;
         border-radius: 5px;
         margin-bottom: 20px;
         box-shadow: 0px 0px 25px 1px #110d1d;
     }
-    
+
     .datos-ul {
         color: rgb(218, 218, 218);
-        font-size: 1rem;
-        padding-top: 20px;
-        letter-spacing: 1px;
+        font-size: .9rem;
+
+        padding-right: 30px;
     }
-    
-    .datos-ul li{
-      
-       
-        padding:8px 0px 8px 30px;
+
+    .datos-ul li {
+        margin: 2px;
+        padding: 8px 0px 8px 30px;
     }
 }
