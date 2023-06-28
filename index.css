@@ -11,6 +11,10 @@
 
 /* SECCION PRINCIPAL*/
 
+.texto{
+    font-weight: 300;
+    letter-spacing: 2px;
+}
 
 .container-presentation {
 
@@ -143,7 +147,7 @@
 
 .datos {
     border: 1px solid #b4463e;
-    width: 800px;
+    width: 900px;
     height: 250px;
     border-radius: 5px;
     margin-bottom: 20px;
